@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>start-button-7116789_1280</title>
+    <style>
+        img {
+            width: 500px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <p><h1 style="position: absolute; left:785px; top: 100px;">준영이 머리카락 개수: <span id="count">0</span></h1></p>
+    <a><img src="https://cdn.pixabay.com/photo/2016/05/13/08/00/head-1389468_1280.png" id="clickImage"style="position: absolute; left:725px; top: 250px; "></a>
+    
+    <script>
+        // 초기 숫자 값
+        let count = 0;
+
+        // 이미지와 숫자를 표시할 요소 가져오기
+        const countElement = document.getElementById('count');
+        const imageElement = document.getElementById('clickImage');
+
+        // 이미지 클릭 시 숫자 증가
+        imageElement.addEventListener('click', () => {
+            count++;
+            countElement.textContent = count;  // 숫자 업데이트
+        });
+    </script>
+</body>
+</html>
