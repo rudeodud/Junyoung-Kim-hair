@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>see</title>
+    <style>
+        /* body와 html 요소가 전체 화면을 차지하도록 설정 */
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* 세로로 요소 정렬 */
+        }
+
+        .zoom-image {
+          width: 200px; /* 기본 크기 설정 */
+          height: auto;
+          transition: transform 0.1s ease; /* 크기 변화에 부드러운 애니메이션 추가 */
+        }
+
+        .zoom-image:hover {
+          transform: scale(1.5); /* 마우스를 올렸을 때 이미지 크기 20% 확대 */
+        }
+
+        h1 {
+            text-align: center; /* 제목 텍스트 가운데 정렬 */
+        }
+
+        a {
+            text-align: center; /* 링크가 가운데 정렬되도록 설정 */
+        }
+    </style>
+</head>
+<body>   
+  <h1>🥵🥵🥵🥵준영이 머리 심기🥵🥵🥵🥵</h1>
+    <a href="./start.html" target="_blank">
+        <img src="https://cdn.pixabay.com/photo/2022/04/07/04/49/start-button-7116789_1280.png" 
+             height="200" width="200" class="zoom-image">
+    </a>
+</body>
+</html>
